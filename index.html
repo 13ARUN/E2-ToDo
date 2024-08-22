@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="titleicon" rel="icon" href="img/titleicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background">
+        <main>
+            <header>
+                <h1>To-Do Planner</h1>
+            </header>
+
+            <section class="taskInputSection">
+                <div class="taskInputField">
+                    <form>
+                        <input type="text" id="taskInput" placeholder="Enter your tasks..." maxlength="150" autocomplete="off">
+                        <button type="submit" title="Add" id="taskAddBtn" > <img src="img/taskadd.png" alt="add icon"></button>   
+                    </form> 
+                </div>
+            </section>
+
+            <section class="errorMsgSection" style="visibility: hidden;"">
+                <div class="errorMsg">
+                    <p id="errorMsgContent"></p>
+                </div>
+            </section>
+
+            <section class="taskFilterSection">
+                <div class="taskFilters">
+                    <input type="radio" name="taskFilter" id="all" value="all" >
+                    <label id="labelall" for="all" title="All">All</label>          
+                    <input type="radio" name="taskFilter" id="inprogress" value="inprogress" >
+                    <label id="labelinprogress" for="inprogress" title="In Progress">In Progress</label>                               
+                    <input type="radio" name="taskFilter" id="completed" value="completed">
+                    <label id="labelcompleted" for="completed" title="Completed">Completed</label>                
+                </div>
+            </section>
+
+            <section class="noTasksSection" style="display: none">
+                <div class="noTaskMsg">
+                    <img src="img/notask.png" alt="notask image">
+                    <h2>Add tasks to begin!!</h2>
+                </div>
+            </section>
+
+            <section class="taskListSection" > 
+                <div class="taskDisplay">
+                    <ul id="taskList">
+                    </ul>
+                </div>
+            </section>
+
+            <section class="countClearSection">    
+                <div class="count">
+                    <h3>You have no tasks here!</h3>
+                </div> 
+                <button title="Clear" id="clear">Clear Tasks</button> <!-- Clear all tasks button -->
+            </section>
+
+            <p class="notification" style="visibility: hidden;"></p>
+
+            <section id="toast-container" style="display: none;">
+                <div class="toast-message">
+                    <span id="message-text"></span>
+                    <div class="button-container">
+                        <button id="confirm-button"><h3>Yes</h3></button>
+                        <button id="cancel-button"><h3>No</h3></button>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
