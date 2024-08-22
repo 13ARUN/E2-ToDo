@@ -8,6 +8,6 @@ A simple, interactive To-Do List web application that allows users to add, edit,
 - **Edit Tasks**: Users can edit existing tasks (excluding completed tasks).
 - **Delete Tasks**: Users can delete individual tasks or clear tasks based on their status (all, in-progress, completed).
 - **Task Filtering**: Tasks can be filtered by status: all, in-progress, or completed.
-- **Task Count Display**: A dynamic display shows the total number of tasks, in-progress tasks, or completed tasks based on the selected filter.
+- **Task Count**: A dynamic display shows the total number of tasks, in-progress tasks, or completed tasks based on the selected filter.
 - **Notifications and Toasts**: Notifications and confirmation toasts are used to inform users about successful actions or to confirm critical actions.
 
