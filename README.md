@@ -1,4 +1,4 @@
-# To-Do List Web Application
+# To-Do List
 
 A simple, interactive To-Do List web application that allows users to add, edit, delete, and filter tasks. The application stores tasks in `localStorage` and provides features such as task filtering, task count, and notifications for task management.
 
