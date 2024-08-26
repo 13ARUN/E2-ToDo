@@ -439,9 +439,7 @@ form input:disabled,
 
 
 @media  (max-width: 1440px) {
-    main{
-        width: 70%;
-    }
+
     .taskFilters{
         width: 70%;
     }
@@ -456,7 +454,7 @@ form input:disabled,
 
 @media  (max-width: 960px) {
     main{
-        width: 75%;
+        width: 70%;
     }
     .taskFilters{
         width: 75%;
